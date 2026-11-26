@@ -41,7 +41,7 @@ export default function LocationPicker({ initial, onConfirm, onClose }: Props) {
   )
 
   return (
-    <div className="fixed inset-0 z-[3000] mx-auto flex max-w-[480px] flex-col bg-surface" role="dialog" aria-label="Ajusta la ubicació">
+    <div className="fixed inset-0 z-[3000] mx-auto flex max-w-[480px] flex-col bg-surface lg:inset-auto lg:left-1/2 lg:top-1/2 lg:h-[660px] lg:w-[760px] lg:max-w-none lg:-translate-x-1/2 lg:-translate-y-1/2 lg:overflow-hidden lg:rounded-2xl lg:shadow-[0_0_0_100vmax_rgba(0,0,0,0.4)]" role="dialog" aria-label="Ajusta la ubicació">
       <div className="flex h-14 shrink-0 items-center justify-between px-gutter">
         <h2 className="font-headline-sm text-headline-sm">Ajusta la ubicació</h2>
         <button onClick={onClose} aria-label="Tanca" className="flex h-12 w-12 items-center justify-center">

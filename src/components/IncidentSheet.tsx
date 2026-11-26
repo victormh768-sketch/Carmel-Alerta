@@ -35,7 +35,7 @@ export default function IncidentSheet({ incident: i, distance, isMine, loggedIn,
   else if (i.supported_by_me) { supportLabel = 'Ja has donat suport'; disabled = true }
 
   return (
-    <div className="absolute inset-x-0 bottom-0 z-[1000] max-h-[66%] overflow-y-auto rounded-t-2xl border-t border-white bg-surface-container-lowest p-4 shadow-[0_-4px_32px_rgba(27,59,111,0.14)]">
+    <div className="absolute inset-x-0 bottom-0 z-[1000] max-h-[66%] lg:inset-x-auto lg:bottom-4 lg:left-4 lg:max-h-[80%] lg:w-[400px] lg:rounded-2xl lg:border overflow-y-auto rounded-t-2xl border-t border-white bg-surface-container-lowest p-4 shadow-[0_-4px_32px_rgba(27,59,111,0.14)]">
       <div className="mb-3 flex flex-wrap items-center gap-2">
         <span className="inline-flex items-center gap-1 rounded-full bg-surface-container-high px-2.5 py-1 font-label-sm text-label-sm uppercase text-on-surface">
           <Icon name={cat.icon} fill className={`!text-[14px] ${cat.chipIcon}`} />

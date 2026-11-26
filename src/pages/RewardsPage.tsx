@@ -33,7 +33,7 @@ export default function RewardsPage() {
   }
 
   return (
-    <div className="flex flex-col gap-5 p-gutter pb-8">
+    <div className="flex flex-col gap-5 p-gutter pb-8 lg:mx-auto lg:w-full lg:p-8 lg:max-w-5xl">
       {user && lv ? (
         <section className="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary to-tertiary-container p-5 text-white shadow-[0_8px_24px_-4px_rgba(211,82,48,0.25)]">
           <Icon name="star" fill className="absolute -right-4 -top-4 !text-[120px] text-white/10" />
@@ -85,7 +85,7 @@ export default function RewardsPage() {
           ))}
         </div>
 
-        <ul className="mt-4 flex flex-col gap-3">
+        <ul className="mt-4 flex flex-col gap-3 lg:grid lg:grid-cols-2">
           {list.map((r) => {
             const can = !!user && user.points >= r.cost
             return (
@@ -142,8 +142,8 @@ export default function RewardsPage() {
       </section>
 
       {confirm && (
-        <div className="fixed inset-0 z-[3000] flex items-end justify-center bg-black/40" role="dialog" aria-modal="true">
-          <div className="w-full max-w-[480px] rounded-t-2xl bg-white p-5 pb-[max(1.25rem,env(safe-area-inset-bottom))]">
+        <div className="fixed inset-0 z-[3000] flex items-end justify-center bg-black/40 lg:items-center" role="dialog" aria-modal="true">
+          <div className="w-full max-w-[480px] rounded-t-2xl lg:rounded-2xl bg-white p-5 pb-[max(1.25rem,env(safe-area-inset-bottom))]">
             <h2 className="font-headline-md text-headline-md">Bescanviar el premi?</h2>
             <p className="mt-2 text-body-md text-on-surface-variant">{confirm.shop}: {confirm.title}. Et costarà <b>{confirm.cost} punts</b>.</p>
             <div className="mt-4 flex gap-2">

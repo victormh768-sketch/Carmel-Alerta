@@ -6,7 +6,7 @@ import BottomNav from './BottomNav'
 export default function Layout() {
   const { api, toastMsg } = useApp()
   return (
-    <div className="relative mx-auto flex h-full max-w-[480px] flex-col bg-surface shadow-[0_0_40px_rgba(27,59,111,0.14)]">
+    <div className="relative mx-auto flex h-full max-w-[480px] flex-col bg-surface shadow-[0_0_40px_rgba(27,59,111,0.14)] lg:max-w-none lg:shadow-none">
       <Header />
       {api.mode === 'local' && (
         <div className="z-[1100] shrink-0 bg-tertiary-fixed px-gutter py-1 text-center font-label-sm text-label-sm text-on-tertiary-fixed-variant">
@@ -20,7 +20,7 @@ export default function Layout() {
       {toastMsg && (
         <div
           role="status"
-          className="absolute inset-x-4 bottom-24 z-[2000] rounded-xl bg-inverse-surface px-4 py-3 text-center font-body-md text-body-md text-inverse-on-surface shadow-lg"
+          className="absolute inset-x-4 bottom-24 z-[2000] lg:inset-x-auto lg:bottom-6 lg:left-1/2 lg:w-96 lg:-translate-x-1/2 rounded-xl bg-inverse-surface px-4 py-3 text-center font-body-md text-body-md text-inverse-on-surface shadow-lg"
         >
           {toastMsg}
         </div>

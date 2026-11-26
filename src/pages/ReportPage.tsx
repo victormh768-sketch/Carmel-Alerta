@@ -88,7 +88,7 @@ export default function ReportPage() {
     'w-full rounded-lg border-[1.5px] border-[#D1D5DB] bg-white px-3 font-body-md text-body-md outline-none focus:border-secondary focus:ring-4 focus:ring-secondary/15'
 
   return (
-    <div className="flex flex-col gap-5 p-gutter pb-8">
+    <div className="flex flex-col gap-5 p-gutter pb-8 lg:mx-auto lg:w-full lg:p-8 lg:max-w-3xl">
       <div>
         <span className="mb-2 inline-flex items-center gap-1 rounded-full bg-primary-fixed px-3 py-1 font-label-sm text-label-sm uppercase text-on-primary-fixed-variant">
           <Icon name="add_a_photo" className="!text-[14px]" /> Nova incidència

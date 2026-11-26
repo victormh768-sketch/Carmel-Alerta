@@ -37,7 +37,7 @@ export default function AuthPage() {
   }
 
   return (
-    <form onSubmit={submit} className="flex min-h-full flex-col gap-4 p-gutter pt-8">
+    <form onSubmit={submit} className="flex min-h-full flex-col gap-4 p-gutter pt-8 lg:mx-auto lg:w-full lg:max-w-md lg:pt-16">
       <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-on-primary">
         <Icon name="location_on" fill className="!text-[32px]" />
       </span>

@@ -42,13 +42,13 @@ export default function ModerationPage() {
   const field = 'w-full rounded-lg border-[1.5px] border-[#D1D5DB] bg-white px-3 py-3 font-body-md text-body-md outline-none focus:border-secondary'
 
   return (
-    <div className="flex flex-col gap-6 p-gutter pb-8">
+    <div className="flex flex-col gap-6 p-gutter pb-8 lg:mx-auto lg:w-full lg:p-8 lg:max-w-4xl">
       <h1 className="font-headline-xl-mobile text-headline-xl-mobile">Moderació</h1>
 
       <section>
         <h2 className="mb-2 font-headline-md text-headline-md">Pendents de verificació ({pending.length})</h2>
         {pending.length === 0 && <p className="text-body-md text-on-surface-variant">No hi ha res pendent. Bona feina!</p>}
-        <ul className="flex flex-col gap-3">
+        <ul className="flex flex-col gap-3 lg:grid lg:grid-cols-2">
           {pending.map((i) => (
             <li key={i.id} className="overflow-hidden rounded-xl bg-white shadow-[0_2px_8px_-2px_rgba(27,59,111,0.06),0_1px_3px_rgba(0,0,0,0.04)]">
               {i.photo_url ? (

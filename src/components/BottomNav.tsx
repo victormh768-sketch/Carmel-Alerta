@@ -1,18 +1,12 @@
 import { NavLink } from 'react-router-dom'
 import Icon from './Icon'
-
-const tabs = [
-  { to: '/', label: 'Mapa', icon: 'map', end: true },
-  { to: '/reportar', label: 'Reportar', icon: 'add_a_photo', center: true },
-  { to: '/comerc', label: 'Comerç', icon: 'storefront' },
-  { to: '/noticies', label: 'Notícies', icon: 'newspaper' },
-]
+import { NAV_TABS as tabs } from './navTabs'
 
 export default function BottomNav() {
   return (
     <nav
       aria-label="Navegació principal"
-      className="z-[1100] flex shrink-0 items-end justify-around border-t border-outline-variant/30 bg-surface-container-lowest px-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] pt-2 shadow-[0_-4px_16px_rgba(27,59,111,0.06)]"
+      className="z-[1100] flex shrink-0 items-end lg:hidden justify-around border-t border-outline-variant/30 bg-surface-container-lowest px-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] pt-2 shadow-[0_-4px_16px_rgba(27,59,111,0.06)]"
     >
       {tabs.map((t) => (
         <NavLink

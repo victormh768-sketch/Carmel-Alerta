@@ -20,7 +20,7 @@ export default function ProfilePage() {
   const mine = incidents.filter((i) => i.author_id === user.id)
 
   return (
-    <div className="flex flex-col gap-5 p-gutter pb-8">
+    <div className="flex flex-col gap-5 p-gutter pb-8 lg:mx-auto lg:w-full lg:p-8 lg:max-w-3xl">
       <section className="flex items-center gap-4">
         <span className="flex h-16 w-16 items-center justify-center rounded-full bg-secondary font-headline-lg text-headline-lg uppercase text-on-secondary">{user.username[0]}</span>
         <div>

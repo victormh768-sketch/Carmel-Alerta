@@ -20,7 +20,7 @@ export default function NewsPage() {
   ] as const
 
   return (
-    <div className="flex flex-col gap-5 p-gutter pb-8">
+    <div className="flex flex-col gap-5 p-gutter pb-8 lg:mx-auto lg:w-full lg:p-8 lg:max-w-4xl">
       <div>
         <span className="mb-2 inline-flex items-center gap-1 rounded-full bg-secondary-fixed px-3 py-1 font-label-sm text-label-sm uppercase text-on-secondary-fixed-variant">
           <Icon name="info" className="!text-[14px]" /> Informació del veïnat
